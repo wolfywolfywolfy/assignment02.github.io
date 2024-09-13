@@ -1,0 +1,130 @@
+/* Semantic elements are: */
+
+/* Head 
+    title
+*/
+
+/* Body
+    nav (header (h1-h5), a href);
+    hr;
+    figure (img src, figcaption);
+    section(h1, p (em))
+    section(h1, p (em))
+    article (blockquote, figure [img src, figcaption])
+    aside (h4, p)
+    figure (img src, figcaption)
+    details (summary, p)
+    section(table [tr (th), tr (td)])
+    footer(p)
+*/
+body {
+    background-color: lightblue;
+    background-attachment: fixed;
+    color: darkblue;
+}
+
+section {
+    display: grid;
+    justify-content: center;
+
+    text-align: justify;
+    font-family: Helvetica;
+}
+
+section h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border: 5px solid;
+    padding: 25px;
+}
+
+nav header {
+    display: grid;
+    justify-content: center; 
+    gap: 20px;
+
+    text-align: center;
+}
+
+nav header h1 {
+    background-color: white;
+    font-size: 50px;
+    color: red;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+nav header h2, h3, h4, h5 {
+    text-transform: uppercase;
+    background-color: #9e90e9;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-style: italic;
+}
+nav a:hover {
+    color:red;
+}
+
+
+figure {
+  display:grid;
+  justify-content: center;
+}
+
+img {
+    height: 250px;
+    object-fit: cover;
+}
+
+aside {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr {
+    border-top: 10px dashed red;
+}
+
+details {
+    font-size: 50px;
+    text-align: center;
+}
+table {
+    border: 5px solid;
+    padding: 5px;
+}
+table th {
+    color: greenyellow;
+    background-color: red;
+}
+
+table tr, td {
+    color: blue;
+    font-size: 25px;
+    text-shadow: 5px 5px 15px #11025d;
+    border: 1px solid;
+    border-color: black;
+    background-color: white;
+    text-align: center;
+}
+
+
+footer {
+    font-size: 150px;
+    color: red;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+footer:hover {
+    color: green;
+}
